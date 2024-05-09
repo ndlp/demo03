@@ -11,7 +11,6 @@ body{
     color: black;
 }
 
-
 footer{
     color: #000;
 }
@@ -157,7 +156,7 @@ ul {
 .contacto-form form button:focus {
     background: #fff;
     color: #d63031;
-    transition: background-color .25s ease-out;
+    transition: background-color .40s ease-out;
     outline: 0;
     cursor: pointer;
 

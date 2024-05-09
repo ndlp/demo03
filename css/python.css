@@ -63,25 +63,38 @@
     align-items: center;
     
 }
-.container-content h1{
-    font-family: "Montserrat"
-}
+
 .container-content span{
    
-    color: red;
-    font-family: Haettenschweiler, sans-serif;
+    
+    color: red ;
+    font-family: "Roboto Condensed", sans-serif;
+    
+    
 }
 
 .python-logo{
     margin-bottom: 30px;
+    font-family: "Jersey 10",sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 .code{
     z-index: 9;
-    margin-top: 350px;
+    margin-top: 450px;
 }
 
+
+
+#view-code-button:hover,#view-code-button:active,#view-code-button:focus{
+    background: red;
+    color: black;
+    transition: background-color .40s ease-out;
+    opacity: 70%;
+    }
 
 
 @media screen and (max-width: 1220px){
