@@ -20,7 +20,7 @@ header {
     height: 80px; /* Establece la altura de la cabecera en 80 píxeles */
     background: skyblue; /* Fija el color de fondo de la cabecera */
     box-shadow: 0 10px 25px -22px black; /* Agrega una sombra a la cabecera */
-    z-index: 10;
+    z-index: 10000;
     
 
 }
@@ -35,7 +35,7 @@ header {
 }
 
 /* Estilos del logo */
-.logo {
+.paul-logo {
     height: 80px; /* Establece la altura del logo en 80 píxeles */
     display: flex; /* Utiliza flexbox para alinear elementos hijos */
     justify-content: center; /* Centra horizontalmente el contenido del logo */
@@ -43,7 +43,7 @@ header {
     
 }
 
-.logo h1 b {
+.paul-logo h1 b {
     color: blue; /* Define el color del texto del logo */
 }
 
@@ -55,6 +55,7 @@ header {
 
 .menu nav {
     height: 100%; /* Establece la altura del nav al 100% de su contenedor */
+    z-index: 10;
 }
 
 .menu nav ul {

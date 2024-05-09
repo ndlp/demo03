@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	// Validar si se enviaron los valores
 	if (!empty($fullname) && !empty($email) && !empty($phone) && !empty($affair)) {
 		// Ruta y nombre del archivo
-		$ruta_archivo = "./baseDatos.csv";
+		$ruta_archivo = "baseDatos.csv";
 
 		// Verificar si el archivo existe
 		$archivo_existe = file_exists($ruta_archivo);

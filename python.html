@@ -16,6 +16,9 @@
     <!-- pyscript only -->
     <link    rel="stylesheet"    href="https://pyscript.net/latest/pyscript.css"/>
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    
+    <link rel="stylesheet" href="https://pyscript.net/examples/assets/css/examples.css" />
+        
 
 </head>
 <body>
@@ -23,7 +26,7 @@
     <!--Header - menu-->
     <header>
         <div class="header-content">
-            <div class="logo">
+            <div class="paul-logo">
                 <h1><b>Paul's </b>Blog</h1>
             </div>
 
@@ -57,10 +60,44 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque obcaecati autem, modi ea non illo alias consequuntur, vero quas qui esse! Minima exercitationem inventore ipsa quis. Eligendi culpa repudiandae soluta.</p>
             </div>
         </div>
-        </div>
+        
         <!--Contenido de la pagina-->
             <div class="container-content">
-            <py-script>print("Hello") </py-script>
+                <h1 class="python-logo">Codigo <span>Python</span></h1>
+                
+                <section class="pyscript">
+                    <py-config>
+                        packages = [
+                        "matplotlib"
+                        ]
+                        plugins = [
+                        "https://pyscript.net/latest/plugins/python/py_tutor.py"
+                        ]
+                    </py-config>
+                    <div id="lineplot"></div>
+                    <py-tutor>
+                        <py-script output="lineplot" >
+                            
+                            import matplotlib.pyplot as plt
+                            fig, ax = plt.subplots()
+
+                            year_1 = [2016, 2017, 2018, 2019, 2020, 2021]
+                            population_1 = [42, 43, 45, 47, 48, 50]
+                                                        
+                            year_2 = [2016, 2017, 2018, 2019, 2020, 2021]
+                            population_2 = [43, 43, 44, 44, 45, 45]
+                                                        
+                            plt.plot(year_1, population_1, marker='o', linestyle='--', color='g', label='Country 1')
+                            plt.plot(year_2, population_2,  marker='d', linestyle='-', color='r', label='Country 2')
+                                                        
+                            plt.xlabel('Year')
+                            plt.ylabel('Population (M)')
+                            plt.title('Year vs Population')
+                            plt.legend(loc='lower right')
+                            display(fig, target="lineplot")
+                            
+                        </py-script>
+                </section>
             </div>
             
         <div class="container-footer">
@@ -81,7 +118,7 @@
             <h4>© 2024 Paul's Blog - Todos los Derechos Reservados</h4>
         </footer>
         </div>
-
+    </div>
 <script src="jss/script.js"></script>
 </body>
 </html>

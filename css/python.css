@@ -3,7 +3,7 @@
     width: 100%; /* Establece el ancho del contenedor de la portada al 100% */
     height: 500px; /* Establece la altura del contenedor de la portada en 500 píxeles */
     position: relative; /* Establece la posición relativa para el contenedor de la portada */
-    margin-top: 80px; /* Desplaza el contenedor de la portada 80 píxeles hacia abajo */
+    margin-top: 0px; /* Desplaza el contenedor de la portada 80 píxeles hacia abajo */
     background-image: url(../img/python.jpg); /* Establece la imagen de fondo del contenedor de la portada */
     background-position: center; /* Centra la imagen de fondo horizontalmente */
     background-size: cover; /* Ajusta la imagen de fondo para cubrir el contenedor */
@@ -59,11 +59,28 @@
     margin: auto;
     margin-top: 40px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     
+}
+.container-content h1{
+    font-family: "Montserrat"
+}
+.container-content span{
+   
+    color: red;
+    font-family: Haettenschweiler, sans-serif;
+}
+
+.python-logo{
+    margin-bottom: 30px;
 }
 
 
+.code{
+    z-index: 9;
+    margin-top: 350px;
+}
 
 
 
@@ -84,10 +101,7 @@
         flex-direction: column;
     }
 
-    article{
-        box-shadow: 0 0 0 0;
-    }
-
+    
     
 
 }
