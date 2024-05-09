@@ -1,0 +1,187 @@
+/* Estilos de la portada */
+.article-container-cover {
+    width: 100%; /* Establece el ancho del contenedor de la portada al 100% */
+    height: 500px; /* Establece la altura del contenedor de la portada en 500 píxeles */
+    position: relative; /* Establece la posición relativa para el contenedor de la portada */
+    margin-top: 80px; /* Desplaza el contenedor de la portada 80 píxeles hacia abajo */
+    background-image: url(../img/img8.webp); /* Establece la imagen de fondo del contenedor de la portada */
+    background-position: center; /* Centra la imagen de fondo horizontalmente */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+}
+
+.article-container-cover:before {
+    content: ''; /* Añade un contenido vacío */
+    width: 100%; /* Establece el ancho del pseudoelemento al 100% */
+    height: 100%; /* Establece la altura del pseudoelemento al 100% */
+    background: blue; /* Fija el color de fondo del pseudoelemento */
+    position: absolute; /* Fija la posición del pseudoelemento de manera absoluta */
+    opacity: 50%; /* Establece la opacidad del pseudoelemento al 50% */
+    top: 0; /* Fija la posición del pseudoelemento en la parte superior */
+    left: 0; /* Fija la posición del pseudoelemento en el extremo izquierdo */
+}
+
+/* Estilos del contenido de la portada */
+.container-info-cover {
+    width: 100%; /* Establece el ancho del contenedor al 100% */
+    max-width: 800px; /* Establece el ancho máximo del contenedor en 800 píxeles */
+    height: 500px; /* Establece la altura del contenedor en 500 píxeles */
+    margin: auto; /* Centra horizontalmente el contenedor */
+    display: flex; /* Utiliza flexbox para alinear elementos hijos */
+    flex-direction: column; /* Establece la dirección de los elementos como columna */
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    position: relative;
+    padding: 20px;
+    z-index: 1;
+    
+}
+
+.container-info-cover h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.container-info-cover p{
+    
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+
+/*contenido del contenedor de articulos*/
+.container-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+article:before{
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: skyblue;
+}
+
+article h1{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+article p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #454545;
+}
+article img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/*Aside de los articulos de relacionados*/
+
+.container-aside aside{
+    width: 320px;
+    border-right: 6px;
+    box-shadow: 0 0 20px -20 black;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    
+    
+}
+
+.container-aside aside img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.container-aside aside h2,
+.container-aside aside p{
+    margin-top: 20px;
+    padding: 0px 20px;
+
+}
+.container-aside aside button{
+    margin-top: 20px;   
+    margin-left: 20px;
+
+    padding: 10px 50px;
+    font-size: 16px;
+    background: skyblue;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+.container-aside aside button:hover{
+    opacity: 0.8;
+}
+
+
+@media screen and (max-width: 1220px){
+
+    .container-content{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 1020px){
+
+    .container-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    article{
+        box-shadow: 0 0 0 0;
+    }
+
+    .container-aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-aside aside{
+        max-width: 300px;
+        margin: 10px;
+    }
+}
+    @media screen and (max-width: 800px){
+
+        .container-aside{
+            flex-wrap: wrap;
+        }
+    
+        #icon-menu{
+            right: 20px;
+        }
+}

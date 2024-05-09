@@ -1,0 +1,90 @@
+/* Estilos de la portada */
+.index-container-cover {
+    width: 100%; /* Establece el ancho del contenedor de la portada al 100% */
+    height: 500px; /* Establece la altura del contenedor de la portada en 500 píxeles */
+    position: relative; /* Establece la posición relativa para el contenedor de la portada */
+    margin-top: 80px; /* Desplaza el contenedor de la portada 80 píxeles hacia abajo */
+    background-image: url(../img/index.jpg); /* Establece la imagen de fondo del contenedor de la portada */
+    background-position: center; /* Centra la imagen de fondo horizontalmente */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+}
+
+.index-container-cover:before {
+    content: ''; /* Añade un contenido vacío */
+    width: 100%; /* Establece el ancho del pseudoelemento al 100% */
+    height: 100%; /* Establece la altura del pseudoelemento al 100% */
+    background: blue; /* Fija el color de fondo del pseudoelemento */
+    position: absolute; /* Fija la posición del pseudoelemento de manera absoluta */
+    opacity: 50%; /* Establece la opacidad del pseudoelemento al 50% */
+    top: 0; /* Fija la posición del pseudoelemento en la parte superior */
+    left: 0; /* Fija la posición del pseudoelemento en el extremo izquierdo */
+}
+
+/* Estilos del contenido de la portada */
+.container-info-cover {
+    width: 100%; /* Establece el ancho del contenedor al 100% */
+    max-width: 800px; /* Establece el ancho máximo del contenedor en 800 píxeles */
+    height: 500px; /* Establece la altura del contenedor en 500 píxeles */
+    margin: auto; /* Centra horizontalmente el contenedor */
+    display: flex; /* Utiliza flexbox para alinear elementos hijos */
+    flex-direction: column; /* Establece la dirección de los elementos como columna */
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    position: relative;
+    padding: 20px;
+    z-index: 1;
+    
+}
+
+.container-info-cover h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.container-info-cover p{
+    
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+
+/*contenido del contenedor de articulos*/
+.container-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+@media screen and (max-width: 1220px){
+
+    .container-content{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 1020px){
+
+    .container-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+}
+    @media screen and (max-width: 800px){
+
+        #icon-menu{
+            right: 20px;
+        }
+}
