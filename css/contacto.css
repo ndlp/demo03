@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+    
+}
 /* Estilos de la portada */
 .contacto-container-cover {
     width: 100%; /* Establece el ancho del contenedor de la portada al 100% */
@@ -53,22 +57,30 @@
     
 }
 
+.container-all{
+    
+}
+
 /*contenido del contenedor */
 .container-content{
+    
     width: 1200px;
     margin: auto;
     margin-top: 40px;
-    display: flex;
-    justify-content: center;
+    
+    /*display: flex;
+    justify-content: center;*/
     
 }
 
 ul {
+    
     list-style: none;
     padding: 0;
 }
 
 .contacto-logo {
+    font-family: 'Quicksand', sans-serif;
     text-align: center;
     font-size: 3em;
 }
@@ -78,14 +90,17 @@ ul {
 }
 
 .contacto-wrapper {
+    margin-top: 30px;
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
 }
 
 .contacto-wrapper > * {
+    
     padding: 1em;
 }
 
 .contacto-form {
+    
     background: #222222;
 }
 
@@ -96,6 +111,8 @@ ul {
 
 .contacto-form form label {
     display: block;
+    color: red;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .contacto-form form p {
@@ -128,20 +145,23 @@ ul {
 
 .contacto-form form button:hover,
 .contacto-form form button:focus {
-    background: #d63031;
-    color: #fff;
-    transition: background-color 1s ease-out;
+    background: #fff;
+    color: #d63031;
+    transition: background-color .25s ease-out;
     outline: 0;
+    cursor: pointer;
+
 }
 
 /* CONTACT INFO */
-.contact-info {
+.contacto-info {
     background: #000;
 }
 
-.contact-info h4, .contact-info ul, .contact-info p {
+.contacto-info h4, .contacto-info ul, .contacto-info p {
     text-align: center;
     margin: 0 0 1rem 0;
+    color: antiquewhite;
 }
 
 /* LARGE SIZE */
