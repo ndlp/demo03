@@ -2,6 +2,15 @@
     box-sizing: border-box;
     
 }
+
+body{
+    background: #3f3838;
+    color: white;
+}
+
+footer{
+    color: #000;
+}
 /* Estilos de la portada */
 .contacto-container-cover {
     width: 100%; /* Establece el ancho del contenedor de la portada al 100% */
@@ -18,7 +27,7 @@
     content: ''; /* Añade un contenido vacío */
     width: 100%; /* Establece el ancho del pseudoelemento al 100% */
     height: 100%; /* Establece la altura del pseudoelemento al 100% */
-    background: blue; /* Fija el color de fondo del pseudoelemento */
+    background: rgb(30, 30, 30); /* Fija el color de fondo del pseudoelemento */
     position: absolute; /* Fija la posición del pseudoelemento de manera absoluta */
     opacity: 50%; /* Establece la opacidad del pseudoelemento al 50% */
     top: 0; /* Fija la posición del pseudoelemento en la parte superior */
@@ -57,9 +66,6 @@
     
 }
 
-.container-all{
-    
-}
 
 /*contenido del contenedor */
 .container-content{
@@ -91,7 +97,7 @@ ul {
 
 .contacto-wrapper {
     margin-top: 30px;
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, .7);
 }
 
 .contacto-wrapper > * {
