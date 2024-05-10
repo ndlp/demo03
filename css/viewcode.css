@@ -68,6 +68,7 @@ body {
 
     content: "Ver Código";
     font-size: 16px;
+    text-align: center
 }
 
 #code-section p{
@@ -75,13 +76,18 @@ body {
 }
 
 #code-section p::before{
+    display: flex;
     font-size: 14px;
     content: "python.html - pyscript";
     font-style: normal;
     color: red;
     font-family: 'Courier New', Courier, monospace;
-    box-sizing: content-box;
-    background: black;
+    height: 40px;
+    background: black ;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 white;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
