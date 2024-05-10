@@ -96,7 +96,7 @@
     }
 #view-code-button:active{
     background: skyblue;
-    color: white;
+    color: black;
     transition: background-color .40s ease-out;
     opacity: 70%;
 }

@@ -68,7 +68,8 @@ body {
 
     content: "Ver Código";
     font-size: 16px;
-    text-align: center
+    text-align: center;
+    box-sizing: content-box;
 }
 
 #code-section p{
@@ -88,6 +89,7 @@ body {
     box-shadow: 0 0 20px 0 white;
     justify-content: center;
     align-items: center;
+    box-sizing: content-box;
 }
 
 nav {
