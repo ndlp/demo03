@@ -56,6 +56,32 @@ body {
     border-radius: 5px;
     cursor: pointer;
     height: 81px;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    
+
+    
+
+}
+#view-code-button:before {
+
+    content: "Ver Código";
+    font-size: 16px;
+}
+
+#code-section p{
+    font-size: 0;
+}
+
+#code-section p::before{
+    font-size: 14px;
+    content: "python.html - pyscript";
+    font-style: normal;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: content-box;
+    background: black;
 }
 
 nav {
