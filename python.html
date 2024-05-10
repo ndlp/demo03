@@ -10,7 +10,8 @@
     <link rel="icon" href="icons/favicon.ico">
     <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="css/python.css">
-    
+    <link rel="stylesheet" href="css/viewcode.css" />
+
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum=1.0, minimum'scale=1.0">
 
     <!-- pyscript only -->
@@ -69,6 +70,8 @@
                 <h1 class="python-logo">Codigo <span>Python</span></h1>
                 
                 <section class="pyscript">
+                    <div id="lineplot"></div>
+                    <py-tutor>
                     <py-config>
                         packages = [
                         "matplotlib"
@@ -77,8 +80,7 @@
                         "https://pyscript.net/latest/plugins/python/py_tutor.py"
                         ]
                     </py-config>
-                    <div id="lineplot"></div>
-                    <py-tutor>
+                    
                         <py-script output="lineplot" >
                             
                             import matplotlib.pyplot as plt

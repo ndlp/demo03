@@ -88,13 +88,18 @@
 
 
 
-#view-code-button:hover,#view-code-button:active,#view-code-button:focus{
+#view-code-button:hover,#view-code-button:focus{
     background: red;
     color: black;
     transition: background-color .40s ease-out;
     opacity: 70%;
     }
-
+#view-code-button:active{
+    background: skyblue;
+    color: white;
+    transition: background-color .40s ease-out;
+    opacity: 70%;
+}
 
 @media screen and (max-width: 1220px){
 
